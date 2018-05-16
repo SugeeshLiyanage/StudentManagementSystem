@@ -1,4 +1,4 @@
-module.exports=function(sequeliz, DataTypes){
+module.exports=function(sequelize, DataTypes){
   var Parent=sequelize.define("Parent",{
     first_name:{
       type:DataTypes.STRING,
@@ -32,7 +32,6 @@ module.exports=function(sequeliz, DataTypes){
         notEmpty:true
       }
     }
-
-    }
-  })
+  });
+  return Parent;
 }
