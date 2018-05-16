@@ -1,9 +1,23 @@
+
+.parentpage h3{
+  text-align: center;
+}
+
+.parentpage{
+  border: solid #000 3px;
+  margin:30px;
+  padding: 15px;
+}
+
+.parentPortal h1{
+  margin-top: 15px;
+}
+
 body {
     background-image: url("chalkboard.jpg");
   }
-  
+
   .vertical-center {
     display: flex;
     align-items: center;
   }
-
