@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json"}));
 app.use(express.static(path.join(__dirname, '/views/')));
-app.use(express.static(path.join(__dirname, '/views/layouts/css')));
+app.use(express.static('./public'));
 
 // Routes
 require("./routes/api-routes.js")(app);

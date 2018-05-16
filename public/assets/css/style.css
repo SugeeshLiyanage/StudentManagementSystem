@@ -1,3 +1,4 @@
+
 .parentpage h3{
   text-align: center;
 }
@@ -11,3 +12,12 @@
 .parentPortal h1{
   margin-top: 15px;
 }
+
+body {
+    background-image: url("chalkboard.jpg");
+  }
+
+  .vertical-center {
+    display: flex;
+    align-items: center;
+  }
