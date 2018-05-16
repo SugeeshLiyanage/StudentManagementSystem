@@ -6,6 +6,7 @@ var bodyParser = require("body-parser");
 var path = require('path');
 var students = require('./models/students.js');
 var nodemon = require('nodemon');
+var teachers= require('./models/teachers.js')
 
 // Set up express
 var app = express();
@@ -26,7 +27,9 @@ app.use(express.static(path.join(__dirname, '/views/')));
 app.use(express.static(path.join(__dirname, '/views/layouts/css')));
 
 // Routes
-require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
+require("./routes/teacher-routes.js")(app);
+require("./routes/student-routes.js")(app);
 
 // creating a view engine with Handlebars
 var exphbs = require('express-handlebars');

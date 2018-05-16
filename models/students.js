@@ -1,11 +1,12 @@
 module.exports = function(sequelize, DataTypes) {
     var Student = sequelize.define("Student", {
-        // id: {
-        //     type: DataTypes.INTEGER,
-        //     autoIncrement: true,
-        //     primaryKey: true,
-        //     allowNull: false
-        // },
+        // Student ID: Need to random number generator?
+        id: {
+            type: DataTypes.INTEGER,
+            autoIncrement: true,
+            primaryKey: true,
+            allowNull: false
+        },
         // first name
         first: {
             type: DataTypes.STRING,
@@ -18,10 +19,20 @@ module.exports = function(sequelize, DataTypes) {
         // Last name
         last: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            validate: {
+                len: [2],
+                notEmpty: true
+            }
         },
+        // Behavior entry
         behavior: {
             type: DataTypes.STRING,
+            allowNull: false
+        },
+        // Grade entry
+        grade: {
+            type: DataTypes.String,
             allowNull: true
         },
         date: {
@@ -29,5 +40,13 @@ module.exports = function(sequelize, DataTypes) {
             defaultValue: DataTypes.NOW
         }
     }); 
+
+    Student.associate = function(models) {
+        Student.belongsTo(models.Teacher, {
+            foreignKey: {
+                allowNull: false
+            }
+        });
+    };
         return Student;
 };
