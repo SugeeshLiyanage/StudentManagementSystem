@@ -43,7 +43,7 @@ app.get('/', function(req, res) {
         // console.log(dbStudents)
         console.log("server .get promise");
         console.log(dbStudents);
-        res.render("index", { student_db: dbStudents });
+        res.render("parent", { student_db: dbStudents });
     });
 });
 
@@ -51,7 +51,7 @@ app.get('/', function(req, res) {
 
 
 // Messaging page
-   
+
 
 // Syncing our sequelize models and then starting our Express app
 //==============================================
