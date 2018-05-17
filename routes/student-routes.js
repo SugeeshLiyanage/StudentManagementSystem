@@ -13,14 +13,12 @@ var db = require("../models");
 module.exports = function(app) {
 
   // GET route for getting all of the posts
-  app.get("/api/posts", function(req, res) {
+  app.get("/api/students", function(req, res) {
     var query = {};
     if (req.query.teacher_id) {
       query.TeacherId = req.query.teacher_id;
     }
-    // Here we add an "include" property to our options in our findAll query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Author
+
     db.Student.findAll({
       where: query,
       include: [db.Teacher]
@@ -31,9 +29,6 @@ module.exports = function(app) {
 
   // Get route for retrieving a single post
   app.get("/api/students/:id", function(req, res) {
-    // Here we add an "include" property to our options in our findOne query
-    // We set the value to an array of the models we want to include in a left outer join
-    // In this case, just db.Author
     db.Student.findOne({
       where: {
         id: req.params.id
