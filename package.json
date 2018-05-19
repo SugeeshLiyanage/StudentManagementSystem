@@ -1,21 +1,26 @@
 {
-  "name": "post-author-joins",
+  "name": "studentmanagementsystem",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.4",
+    "sequelize-tokenify": "^0.1.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js"
+    "start": "node server.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SugeeshLiyanage/StudentManagementSystem.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mysql2": "^1.3.6",
-    "sequelize": "^4.3.1",
-    "sequelize-tokenify": "^0.1.7"
-  }
+  "bugs": {
+    "url": "https://github.com/SugeeshLiyanage/StudentManagementSystem/issues"
+  },
+  "homepage": "https://github.com/SugeeshLiyanage/StudentManagementSystem#readme"
 }
