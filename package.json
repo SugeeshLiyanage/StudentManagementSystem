@@ -1,25 +1,21 @@
 {
-  "name": "studentmanagementsystem",
+  "name": "post-author-joins",
   "version": "1.0.0",
-  "description": "App that addresses the challenges teaches face in documenting student behavior.",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SugeeshLiyanage/StudentManagementSystem.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SugeeshLiyanage/StudentManagementSystem/issues"
-  },
-  "homepage": "https://github.com/SugeeshLiyanage/StudentManagementSystem#readme",
   "dependencies": {
-    "mysql": "^2.15.0",
-    "mysql2": "^1.5.3",
-    "sequelize": "^4.37.7"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mysql2": "^1.3.6",
+    "sequelize": "^4.3.1",
+    "sequelize-tokenify": "^0.1.7"
   }
 }
