@@ -20,45 +20,23 @@
 }
 
 body {
-    /* background-image: url("chalkboard.jpg"); */
+    background-image: url("../img/chalkboard.jpg");
+
   }
 
-  .vertical-center {
-    display: flex;
-    align-items: center;
+
+
+  .jumbotron {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: none;
+    color: white;
   }
-.studentPhoto{
-  max-width: 200px;
-  max-height: 200px;
-}
-.studentInfo{
-  margin-top: 25px;
-}
-.studentFirstName{
-  padding:10px;
-  font-size: 16pt;
-}
-.studentLastName{
-  padding:10px;
-  font-size: 16pt;
-}
-.studentID{
-  padding:10px;
-  font-size: 16pt;
-}
-.studentGrade{
-  padding:10px;
-  font-size: 16pt;
-}
-.studentTeacher{
-  padding:10px;
-  font-size: 16pt;
-}
 
-.behaviorLog h3{
-  text-align: center;
-}
+ .jumbotron h1.display-4 {
+    font-size: 150px;
 
-.behaviorLog{
-  margin-top: 25px;
-}
+  }

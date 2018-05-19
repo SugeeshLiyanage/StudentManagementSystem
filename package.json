@@ -1,11 +1,12 @@
 {
   "name": "studentmanagementsystem",
   "version": "1.0.0",
-  "description": "App that addresses the challenges teaches face in documenting student behavior.",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.17.4",
+    "sequelize-tokenify": "^0.1.7"
   },
   "devDependencies": {},
   "scripts": {
