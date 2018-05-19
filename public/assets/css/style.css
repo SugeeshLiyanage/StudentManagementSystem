@@ -20,10 +20,25 @@
 }
 
 body {
-    background-image: url("chalkboard.jpg");
+    background-image: url("../img/chalkboard.jpg");
+    
   }
 
-  .vertical-center {
-    display: flex;
-    align-items: center;
+ 
+
+  .jumbotron {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: none;
+    color: white;
   }
+
+ .jumbotron h1.display-4 {
+    font-size: 150px;
+    
+  }
+
+
