@@ -58,3 +58,39 @@ body {
 h2 {
   color: white;
 }
+
+.studentPhoto{
+  max-width: 200px;
+  max-height: 200px;
+}
+.studentInfo{
+  margin-top: 25px;
+}
+.studentFirstName{
+  padding:10px;
+  font-size: 16pt;
+}
+.studentLastName{
+  padding:10px;
+  font-size: 16pt;
+}
+.studentID{
+  padding:10px;
+  font-size: 16pt;
+}
+.studentGrade{
+  padding:10px;
+  font-size: 16pt;
+}
+.studentTeacher{
+  padding:10px;
+  font-size: 16pt;
+}
+
+.behaviorLog h3{
+  text-align: center;
+}
+
+.behaviorLog{
+  margin-top: 25px;
+}
