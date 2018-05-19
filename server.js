@@ -35,23 +35,38 @@ var exphbs = require('express-handlebars');
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+var viewController=require('./controllers/views.js');
+
+app.use(viewController);
 // index page
-app.get('/', function(req, res) {
-    db.Student.findAll({
-        // need to do something her to feed jquery or handlebars
-    }).then(function(dbStudents) {
-        // console.log(dbStudents)
-        console.log("server .get promise");
-        console.log(dbStudents);
-        res.render("index", { student_db: dbStudents });
-    });
-});
+// app.get('/', function(req, res) {
+//     db.Student.findAll({
+//         // need to do something her to feed jquery or handlebars
+//     }).then(function(dbStudents) {
+//         // console.log(dbStudents)
+//         console.log("server .get promise");
+//         console.log(dbStudents);
+//         res.render("index", { student_db: dbStudents });
+//     });
+// });
+//
+// app.get('/parent', function(req, res) {
+//     db.Student.findAll({
+//         // need to do something her to feed jquery or handlebars
+//     }).then(function(dbStudents) {
+//         // console.log(dbStudents)
+//         console.log("server .get promise");
+//         console.log(dbStudents);
+//         res.render("parent", { student_db: dbStudents });
+//     });
+// });
+
 
 //  teachers page
 
 
 // Messaging page
-   
+
 
 // Syncing our sequelize models and then starting our Express app
 //==============================================
