@@ -58,3 +58,18 @@ body {
 h2 {
   color: white;
 }
+
+.jumbotron {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  background: none;
+  color: white;
+}
+
+.jumbotron h1.display-4 {
+  font-size: 150px;
+  
+}
