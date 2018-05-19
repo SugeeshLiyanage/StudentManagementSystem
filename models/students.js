@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
     var Student = sequelize.define("Student", {
-        // id: {
-        //     type: DataTypes.INTEGER,
-        //     autoIncrement: true,
-        //     primaryKey: true,
-        //     allowNull: false
-        // },
+        id: {
+            type: DataTypes.INTEGER(4).ZEROFILL.UNSIGNED,
+            autoIncrement: true,
+            primaryKey: true,
+            allowNull: false
+        },
         // first name
         first: {
             type: DataTypes.STRING,
@@ -28,6 +28,6 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
         }
-    }); 
+    });
         return Student;
 };

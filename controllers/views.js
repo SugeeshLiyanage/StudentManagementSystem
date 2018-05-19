@@ -23,6 +23,8 @@ router.get('/student', function(req, res){
   res.render('student');
 });
 
-
+router.get('/teacher', function(req, res){
+  res.render('teacher');
+})
 
 module.exports=router;

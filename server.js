@@ -37,6 +37,7 @@ app.set('view engine', 'handlebars');
 
 var viewController=require('./controllers/views.js');
 
+
 app.use(viewController);
 // index page
 // app.get('/', function(req, res) {
