@@ -19,11 +19,9 @@
   text-align: center;
 }
 
-body {
-    background-image: url("../img/chalkboard.jpg");
-
-  }
-
+body{
+  background-image: url('assets/images/chalkboard.jpg');
+}
 
 
   .jumbotron {
